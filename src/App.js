@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './components/Header/Header'
 import Chat from './components/Chat/Chat'
+import TinderCards from './components/TinderCards/TinderCards'
 import { Router, Routes, Route } from 'react-router-dom'
 import './App.css'
 
@@ -10,8 +11,9 @@ function App() {
       <Header />
 
       <Routes>
-        <Route path="/" />
         <Route path="/chat" element={<Chat />} />
+        <Route path="/quazi" element={<TinderCards />} />
+        <Route path="/" />
       </Routes>
     </div>
   )
